@@ -31,3 +31,26 @@ configen så kan du låta wordpress generera en ny config.
 Om du använder https på din site så rekommenderar jag att du ändrar på
 definitionen av konstanten =WP_HOME= i =public_html/index.php= så att den har
 =https= som protokoll.
+
+** Om plugins och teman inte fungerar som förväntat
+Om mot förmodan plugins och teman och sådant inte fungerar som förväntat så
+behöver du lägga till lite configs i =wp-config.php= som redan är definerade
+i =index.php=.
+
+Följande variabler behöver sättas. Den sistnämnda finns redan på ett ställe i
+exempelfilen från Wordpress och behöver därmed redigeras snarare än läggas
+till.
+#+BEGIN_SRC php
+/** Set variable for content directory */
+define('WP_CONTENT_DIR', dirname(__FILE__).'/wp-content');
+
+/** Calculate the URL for the site */
+define('WP_HOME', 'http://'.$_SERVER['HTTP_HOST']);
+
+/** Set URL's for content and wordpress install */
+define('WP_CONTENT_URL', WP_HOME.'/wp-content');
+define('WP_SITE_URL', WP_HOME.'/wp');
+
+/** Set variable for wordpress directory */
+define('ABSPATH', dirname(__FILE__) . '/wp/');
+#+END_SRC
