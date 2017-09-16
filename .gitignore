@@ -1,3 +1,7 @@
+# Ignore wp-config
+public_html/wp-config.php
+
+# Ignore vendor dir used by composer
 vendor/
 
 # Ignore the wordpress install
