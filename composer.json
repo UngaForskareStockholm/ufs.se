@@ -23,14 +23,14 @@
   "extra": {
     "wordpress-install-dir": "public_html/wp",
     "installer-paths": {
-      "public_html/app/plugins/{$name}": ["type:wordpress-plugin"],
-      "public_html/app/themes/{$name}": ["type:wordpress-theme"],
-      "public_html/app/mu-plugins/{$name}": ["type:wordpress-muplugin"]
+      "public_html/wp-content/plugins/{$name}": ["type:wordpress-plugin"],
+      "public_html/wp-content/themes/{$name}": ["type:wordpress-theme"],
+      "public_html/wp-content/mu-plugins/{$name}": ["type:wordpress-muplugin"]
     },
     "dropin-paths": {
-      "public_html/app/languages/": ["vendor:koodimonni-language"],
-      "public_html/app/languages/plugins/": ["vendor:koodimonni-plugin-language"],
-      "public_html/app/languages/themes/": ["vendor:koodimonni-theme-language"]
+      "public_html/wp-content/languages/": ["vendor:koodimonni-language"],
+      "public_html/wp-content/languages/plugins/": ["vendor:koodimonni-plugin-language"],
+      "public_html/wp-content/languages/themes/": ["vendor:koodimonni-theme-language"]
     }
   }
 }
