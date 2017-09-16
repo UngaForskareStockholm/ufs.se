@@ -1,0 +1,20 @@
+/*
+ Theme Name:   Stargazer Child
+ Theme URI:    http://example.com/twenty-fourteen-child/
+ Description:  Stargazer Child Theme
+ Author:       Felicia
+ Author URI:   
+ Template:     stargazer
+ Version:      1.0.0
+ Tags:         
+ Text Domain:  stargazer-child
+*/
+
+@import url("../stargazer/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+#menu-secondary {
+
+	padding-top: 0rem;}

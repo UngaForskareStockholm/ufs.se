@@ -1,0 +1,14 @@
+RewriteEngine on
+RewriteBase /
+
+# Serve files if they exist
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Serve default WP stuff on default urls
+RewriteRule ^(wp-(admin|includes).*) wp/$1 [L]
+RewriteRule ^(.*\.php)$ wp/$1 [L]
+
+# Redirect all other stuff to index
+RewriteRule . index.php [L]

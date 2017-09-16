@@ -1,0 +1,17 @@
+vendor/
+
+# Ignore the wordpress install
+public_html/wp/
+
+# Ignore installed languages dir
+public_html/wp-content/languages/
+
+# Ignore installed plugins dir
+public_html/wp-content/plugins/
+!public_html/wp-content/plugins/index.php
+
+# Ignore installed themes dir
+public_html/wp-content/themes/stargazer/
+
+# Ignore uploads dir
+public_html/wp-content/uploads/
