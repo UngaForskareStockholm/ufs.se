@@ -13,5 +13,20 @@
  */
 define('WP_USE_THEMES', true);
 
+
+/** Set variable for content directory */
+define('WP_CONTENT_DIR', dirname(__FILE__).'/wp-content');
+
+/** Set variable for wordpress directory */
+define('ABSPATH', dirname(__FILE__) . '/wp/');
+
+/** Calculate the URL for the site */
+define('WP_HOME', 'http://'.$_SERVER['HTTP_HOST']);
+
+/** Set URL's for content and wordpress install */
+define('WP_CONTENT_URL', WP_HOME.'/wp-content');
+define('WP_SITE_URL', WP_HOME.'/wp');
+
+
 /** Loads the WordPress Environment and Template */
 require( dirname( __FILE__ ) . '/wp/wp-blog-header.php' );
