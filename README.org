@@ -1,0 +1,33 @@
+
+* UFS.se Wordpress Installation
+Detta repo innehåller ett skelett, tema och allt förutom själva configen för
+att sätta upp wordpress-installationen för http://ufs.se/.
+
+* Guide för att bygga projeket
+Börja med att installera =composer=, det finns en guide på denna site:
+https://getcomposer.org/
+
+När du har composer så ställer du dig i rootmappen för projeket och skriver
+=composer install= alternativt =composer.phar install= beroende på vad din
+=composer=-fil heter. Om den inte är exekverbar så kan du behöva skriva
+=php composer install= eller liknande.
+
+När =composer= jobbat färdigt så kommer du ha mer filer i =public_html= än
+vad det var innan. Detta är hela wordpress-installationen med plugins,
+rewrites, configs, tema och allt. Förutom uploads och configs.
+
+* Återställa uploads-mappen för nya deploys
+Alla uploads (av bilder och liknande) ska läggas i en mapp som heter
+=public_html/wp-content/uploads/=. Den bör redan finnas men är tom, så det
+datat får du ta från en tidigare installation eller välja att börja om tomt.
+
+* Configs
+Configen är inte inkluderad här av uppenbara skäl. Om man bara uppdaterar
+ufs.se så är det bara att ta configen från nuvarande site.
+
+Om man skulle sätta upp en ny config för att man slarvat bort den gamla
+configen så kan du låta wordpress generera en ny config.
+
+Om du använder https på din site så rekommenderar jag att du ändrar på
+definitionen av konstanten =WP_HOME= i =public_html/index.php= så att den har
+=https= som protokoll.
