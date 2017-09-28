@@ -17,7 +17,7 @@
     "wpackagist-plugin/akismet": "^4.0",
     "wpackagist-plugin/genericond": "^4.0",
     "wpackagist-plugin/limit-login-attempts": "^1.7",
-    "wpackagist-plugin/mailchimp-for-wp": "3.1.10",
+    "wpackagist-plugin/mailchimp-for-wp": "^4.0",
     "wpackagist-plugin/whistles": "^0.1"
   },
   "extra": {
