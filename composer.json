@@ -16,9 +16,9 @@
     "wpackagist-theme/stargazer": "^3.0",
     "wpackagist-plugin/akismet": "^4.0",
     "wpackagist-plugin/genericond": "^4.0",
-    "wpackagist-plugin/limit-login-attempts": "1.7.1",
+    "wpackagist-plugin/limit-login-attempts": "^1.7",
     "wpackagist-plugin/mailchimp-for-wp": "3.1.10",
-    "wpackagist-plugin/whistles": "0.1.1"
+    "wpackagist-plugin/whistles": "^0.1"
   },
   "extra": {
     "wordpress-install-dir": "public_html/wp",
