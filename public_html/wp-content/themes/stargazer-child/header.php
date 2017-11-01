@@ -21,7 +21,7 @@
 
 					<div id="branding">
 						<div class="logo">					
-							<a href="/" title="<?php bloginfo('title'); ?>"><img src="http://ufs.se/wp-content/uploads/2014/04/copy-garland_logo.png" title="<?php bloginfo('title'); ?>" alt="<?php bloginfo('title'); ?>" ></a>		
+							<a href="/" title="<?php bloginfo('title'); ?>"><img src="/wp-content/uploads/2014/04/copy-garland_logo.png" title="<?php bloginfo('title'); ?>" alt="<?php bloginfo('title'); ?>" ></a>
 						</div>
 					</div><!-- #branding -->
 
