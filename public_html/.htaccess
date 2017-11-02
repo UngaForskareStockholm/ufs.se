@@ -5,6 +5,9 @@ RewriteBase /
 RewriteCond %{HTTP:HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
+# Add HSTS header
+Header add Strict-Transport-Security "max-age=31536000"
+
 # Serve files if they exist
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
