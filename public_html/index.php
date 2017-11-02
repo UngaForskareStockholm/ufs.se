@@ -21,7 +21,7 @@ define('WP_CONTENT_DIR', dirname(__FILE__).'/wp-content');
 define('ABSPATH', dirname(__FILE__) . '/wp/');
 
 /** Calculate the URL for the site */
-define('WP_HOME', 'http://'.$_SERVER['HTTP_HOST']);
+define('WP_HOME', 'https://'.$_SERVER['HTTP_HOST']);
 
 /** Set URL's for content and wordpress install */
 define('WP_CONTENT_URL', WP_HOME.'/wp-content');

@@ -1,7 +1,7 @@
 
 * UFS.se Wordpress Installation
 Detta repo innehåller ett skelett, tema och allt förutom själva configen för
-att sätta upp wordpress-installationen för http://ufs.se/.
+att sätta upp wordpress-installationen för https://ufs.se/.
 
 * Guide för att bygga projeket
 Börja med att installera =composer=, det finns en guide på denna site:
