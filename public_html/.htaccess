@@ -5,6 +5,10 @@ RewriteBase /
 RewriteCond %{HTTP:HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
+# Rewrite away from www.*
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule (.*) https://ufs.se%{REQUEST_URI} [R=301,L]
+
 # Add HSTS header
 Header add Strict-Transport-Security "max-age=31536000"
 
