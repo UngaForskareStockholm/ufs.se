@@ -1,6 +1,10 @@
 RewriteEngine on
 RewriteBase /
 
+# Redirect uf.se to ufs.se
+RewriteCond %{HTTP_HOST} ^uf.se [NC]
+RewriteRule (.*) https://ufs.se%{REQUEST_URI} [R=301,L]
+
 # Redirect to https
 RewriteCond %{HTTP:HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
